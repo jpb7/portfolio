@@ -14,21 +14,30 @@
     margin: 10px 10px 10px 10px;
 }
 
-#about {
+#about, #projects {
     color: white;
     text-align: justify;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
 #resume {
+    color: #383838;
     margin: 20px 10px 10px 10px;
 }
 
 .education, .experience {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .psu-info, .uo-info, .current-job, .previous-jobs {
-    margin-left: 10px;
+    margin-left: 20px;
+}
+
+.bg-dark {
+    background-color: #383838 !important;
+}
+
+.carousel-item {
+    margin-top: 10px;
 }

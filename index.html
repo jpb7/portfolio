@@ -24,18 +24,27 @@
   </script>
 </head>
 <body>
+
   <!-- Navbar -->
-  <nav id="nav-obj" class="navbar navbar-dark bg-dark rounded">
+  <nav id="nav-obj" class="navbar navbar-dark bg-dark rounded gray">
     <span id="logo" class="navbar-brand mb-0 h1">Jacob Bentley</span>
     <ul class="navlist navbar-brand mb-0 navbar navbar-dark bg-dark">
       <li class="navbar-brand mb-0 h2">
-        <a class="navbar-brand mb-0 navbar navbar-dark bg-dark" href="#about">About</a>
+        <a class="navbar-brand mb-0 navbar navbar-dark bg-dark"
+           href="#about">About</a>
       </li>
-      <li class="navbar-brand mb-0 h2">Resume</li>
-      <li class="navbar-brand mb-0 h2">Projects</li>
+      <li class="navbar-brand mb-0 h2">
+        <a class="navbar-brand mb-0 navbar navbar-dark bg-dark"
+           href="#resume">Resume</a>
+      </li>
+      <li class="navbar-brand mb-0 h2">
+        <a class="navbar-brand mb-0 navbar navbar-dark bg-dark"
+           href="#projects">Projects</a>
+      </li>
       <li class="navbar-brand mb-0 h2">Contact</li>
     </ul>
   </nav>
+
   <!-- Welcome -->
   <section>
     <div class="text-center">
@@ -50,15 +59,17 @@
       </p>
     </div>
   </section>
+
   <!-- About -->
-  <section id="about" class="bg-dark rounded">
+  <section id="about" class="bg-dark rounded gray">
     <h2>About Me</h2>
     <p>I'm a computer science major at Portland State University, as well as an active intern in the PSU/PDX Cooperative Education Program (PCEP).</p>
     <p>My first rotation in PCEP is with Multnomah County, and I'm excited to be a part of their team of .NET developers creating software products for various county departments. I'm new to programming in C# and .NET but so far I'm enjoying the overall sense of integration that comes with working in a Microsoft environment.</p>
     <p>As for this website, it's a quick little demo site I'm deploying for a web development class at PSU. If you recognize a lot of default Bootstrap styling, you have a sense of the time crunch I'm working under.</p>
   </section>
+
   <!-- Resume -->
-  <section id="resume">
+  <section id="resume" class="d-block mx-auto w-50">
     <div class="education">
       <h3>Education</h3>
       <div class="psu-info">
@@ -96,5 +107,60 @@
       </div>
     </div>
   </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-dark rounded">
+    <h2>Projects</h2>
+
+    <!-- Carousel -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- First slide -->
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="images/algorithms.jpg" class="d-block mx-auto w-75 rounded" alt="..." height="350px">
+          <h4 class="text-center mt-4">
+            <a class="text-reset text-decoration-none" href="https://github.com/jpb7/CS-350">
+              CS-350: Algorithms
+            </a>
+          </h4>
+          <p class="text-center">Python code implementing various algorithms for a class.</p>
+      </div>
+
+      <!-- Second slide -->
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="images/redblacktree.png" class="d-block mx-auto w-75 rounded" alt="..." height="350px">
+        <h4 class="text-center mt-4">
+          <a class="text-reset text-decoration-none" href="https://github.com/jpb7/rbtree">
+            Red-Black Tree
+          </a>
+        </h4>
+        <p class="text-center">A homebrew binary tree in C++.</p>
+      </div>
+
+      <!-- Third slide -->
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="images/webdev.jpg" class="d-block mx-auto w-75 rounded" alt="..." height="350px">
+        <h4 class="text-center mt-4">
+          <a class="text-reset text-decoration-none" href="https://github.com/jpb7/CS-410">
+            CS-410: Intro to Web Development
+          </a>
+        </h4>
+        <p class="text-center">Assignments covering HTML, CSS, JavaScript, and a few frameworks.</p>
+      </div>
+    </div>
+
+    <!-- Carousel controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </section>
+
 </body>
 </html>
