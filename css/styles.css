@@ -17,7 +17,18 @@
 #about {
     color: white;
     text-align: justify;
-    border: solid 2px;
     margin: 10px;
     padding: 10px;
+}
+
+#resume {
+    margin: 20px 10px 10px 10px;
+}
+
+.education, .experience {
+    margin-left: 10px;
+}
+
+.psu-info, .uo-info, .current-job, .previous-jobs {
+    margin-left: 10px;
 }
