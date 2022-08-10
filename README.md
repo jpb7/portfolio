@@ -1,5 +1,5 @@
-# jpb7.github.io
+# CS-410: Final Project
 
-Final project for Intro to Web Development at PSU, summer term of 2022.
+Procrastinated mightily and then completed frantically for Intro to Web Development at PSU, summer term of 2022.
 
-Nothing glamorous, just trying to fulfill basic requirements.
+Nothing glamorous: just trying to fulfill basic requirements.
