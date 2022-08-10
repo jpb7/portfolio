@@ -1,9 +1,16 @@
+:root {
+    --dark-gray: #383838;
+}
 .bg-dark {
-    background-color: #383838 !important;
+    background-color: var(--dark-gray) !important;
 }
 
 #nav-obj {
     margin: 10px;
+}
+
+.navbar-toggler {
+    margin-right: 10px;
 }
 
 .navlist {
@@ -19,6 +26,10 @@
     margin: 10px 10px 10px 10px;
 }
 
+.lead {
+    margin: 10px;
+}
+
 #about, #projects {
     color: white;
     text-align: justify;
@@ -26,11 +37,26 @@
     padding: 20px;
 }
 
+@media (min-width: 414px) {
+    #resume {
+        border: none;
+    }
+    .carousel-item>img {
+        height: 150px;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-item>img {
+        height: 300px;
+    }
+}
+
 #resume {
-    color: #383838;
+    color: var(--dark-gray);
     margin: 20px 10px 20px 10px;
-    border-left: solid 2px #383838;
-    border-right: solid 2px #383838;
+    border-left: solid 2px var(--dark-gray);
+    border-right: solid 2px var(--dark-gray);
 }
 
 .resume-header {
@@ -58,13 +84,13 @@
 }
 
 .btn-primary {
-    background-color: #383838 !important;
+    background-color: var(--dark-gray) !important;
     border: none;
 }
 
 .btn-outline-primary {
-    color: #383838 !important;
-    border-color: #383838 !important;
+    color: var(--dark-gray) !important;
+    border-color: var(--dark-gray) !important;
 }
 
 .text-muted {
