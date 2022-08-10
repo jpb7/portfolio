@@ -1,3 +1,7 @@
+.bg-dark {
+    background-color: #383838 !important;
+}
+
 #nav-obj {
     margin: 10px;
 }
@@ -7,6 +11,7 @@
 }
 
 #logo {
+    font-size: 24px;
     margin-left: 20px;
 }
 
@@ -17,13 +22,13 @@
 #about, #projects {
     color: white;
     text-align: justify;
-    margin: 10px;
+    margin: 20px 10px 20px 10px;
     padding: 20px;
 }
 
 #resume {
     color: #383838;
-    margin: 20px 10px 10px 10px;
+    margin: 20px 10px 20px 10px;
     border-left: solid 2px #383838;
     border-right: solid 2px #383838;
 }
@@ -40,12 +45,8 @@
     margin-left: 20px;
 }
 
-.bg-dark {
-    background-color: #383838 !important;
-}
-
 #projects {
-    margin: 10px;
+    margin: 20px 10px 20px 10px;
 }
 
 .carousel-item {
@@ -53,7 +54,7 @@
 }
 
 #contact {
-    margin: 10px;
+    margin: 20px 10px 20px 10px;
 }
 
 .btn-primary {
@@ -68,5 +69,10 @@
 
 .text-muted {
     margin-right: 10px;
+    margin-bottom: 10px;
     text-align: right;
+}
+
+.main {
+    max-width: 750px;
 }

@@ -24,9 +24,10 @@
   </script>
 </head>
 <body>
+  <div class="main d-block mx-auto">
 
   <!-- Navbar -->
-  <nav id="nav-obj" class="navbar navbar-dark bg-dark rounded gray">
+  <nav id="nav-obj" class="navbar navbar-dark bg-dark rounded">
     <span id="logo" class="navbar-brand mb-0 h1">Jacob Bentley</span>
     <ul class="navlist navbar-brand mb-0 navbar navbar-dark bg-dark">
       <li class="navbar-brand mb-0 h2">
@@ -41,7 +42,10 @@
         <a class="navbar-brand mb-0 navbar navbar-dark bg-dark"
            href="#projects">Projects</a>
       </li>
-      <li class="navbar-brand mb-0 h2">Contact</li>
+      <li class="navbar-brand mb-0 h2">
+        <a class="navbar-brand mb-0 navbar navbar-dark bg-dark"
+           href="#contact">Contact</a>
+      </li>
     </ul>
   </nav>
 
@@ -69,7 +73,7 @@
   </section>
 
   <!-- Resume -->
-  <section id="resume" class="d-block mx-auto w-50">
+  <section id="resume" class="d-block mx-auto w-75">
     <div class="education">
       <h3 class="resume-header">Education:</h3>
       <div class="psu-info">
@@ -118,7 +122,7 @@
 
       <!-- First slide -->
       <div class="carousel-item active" data-bs-interval="5000">
-        <img src="images/algorithms.jpg" class="d-block mx-auto w-75 rounded" alt="..." height="350px">
+        <img src="images/algorithms.jpg" class="d-block mx-auto w-75 rounded" alt="..." height="300px">
           <h4 class="text-center mt-4">
             <a class="text-reset text-decoration-none" href="https://github.com/jpb7/CS-350">
               CS-350: Algorithms
@@ -129,7 +133,7 @@
 
       <!-- Second slide -->
       <div class="carousel-item" data-bs-interval="5000">
-        <img src="images/redblacktree.png" class="d-block mx-auto w-75 rounded" alt="..." height="350px">
+        <img src="images/redblacktree.png" class="d-block mx-auto w-75 rounded" alt="..." height="300px">
         <h4 class="text-center mt-4">
           <a class="text-reset text-decoration-none" href="https://github.com/jpb7/rbtree">
             Red-Black Tree
@@ -140,7 +144,7 @@
 
       <!-- Third slide -->
       <div class="carousel-item" data-bs-interval="5000">
-        <img src="images/webdev.jpg" class="d-block mx-auto w-75 rounded" alt="..." height="350px">
+        <img src="images/webdev.jpg" class="d-block mx-auto w-75 rounded" alt="..." height="300px">
         <h4 class="text-center mt-4">
           <a class="text-reset text-decoration-none" href="https://github.com/jpb7/CS-410">
             CS-410: Intro to Web Development
@@ -165,7 +169,7 @@
   <!-- Contact form -->
   <section id="contact">
     <div class="row my-3">
-    <form class="d-block mx-auto w-50 contact-form">
+    <form class="d-block mx-auto w-75 contact-form">
     <h2>Contact</h2>
       <div class="row mb-3">
         <div class="col">
@@ -192,5 +196,6 @@
     <div class="text-muted">&copy; Jacob Bentley, 2022</div>
   </footer>
 
+</div>
 </body>
 </html>
