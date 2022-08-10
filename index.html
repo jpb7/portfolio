@@ -27,32 +27,36 @@
   <div class="main d-block mx-auto">
 
   <!-- Navbar -->
-  <nav id="nav-obj" class="navbar navbar-expand-md navbar-dark bg-dark rounded">
+  <nav id="nav-obj" class="navbar navbar-collapse navbar-expand-md navbar-dark bg-dark rounded">
+
     <span id="logo" class="navbar-brand mb-0 h1">Jacob Bentley</span>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="collapse navbar-collapse justify-content-end">
-      <ul class="navlist navbar-expand-md navbar-brand mb-0 navbar navbar-dark bg-dark">
-        <li class="navbar-brand mb-0 h2">
-          <a class="navbar-brand mb-0 navbar navbar-dark bg-dark"
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div id="navbar-menu" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav navbar-collapse-sm navbar-brand mb-0 navbar navbar-dark bg-dark">
+        <li class="nav-item navbar-brand mb-0 h2">
+          <a class="nav-link navbar-brand mb-0 navbar navbar-dark bg-dark"
             href="#about">About</a>
         </li>
-        <li class="navbar-brand mb-0 h2">
-          <a class="navbar-brand mb-0 navbar navbar-dark bg-dark"
+        <li class="nav-item navbar-brand mb-0 h2">
+          <a class="nav-link navbar-brand mb-0 navbar navbar-dark bg-dark"
             href="#resume">Resume</a>
         </li>
-        <li class="navbar-brand mb-0 h2">
+        <li class="nav-item nav-link navbar-brand mb-0 h2">
           <a class="navbar-brand mb-0 navbar navbar-dark bg-dark"
             href="#projects">Projects</a>
         </li>
-        <li class="navbar-brand mb-0 h2">
+        <li class="nav-item nav-link navbar-brand mb-0 h2">
           <a class="navbar-brand mb-0 navbar navbar-dark bg-dark"
             href="#contact">Contact</a>
         </li>
       </ul>
     </div>
+
   </nav>
 
   <!-- Welcome -->
@@ -79,7 +83,7 @@
   </section>
 
   <!-- Resume -->
-  <section id="resume" class="d-block mx-auto w-75">
+  <section id="resume" class="d-block mx-auto">
     <div class="education">
       <h3 class="resume-header">Education:</h3>
       <div class="psu-info">
@@ -134,7 +138,7 @@
               CS-350: Algorithms
             </a>
           </h4>
-          <p class="text-center">Python code implementing various algorithms.</p>
+          <p class="text-center">Python code solving various problems and implementing different types of algorithms.</p>
       </div>
 
       <!-- Second slide -->
@@ -145,7 +149,7 @@
             Red-Black Tree
           </a>
         </h4>
-        <p class="text-center">A homebrew binary tree in C++.</p>
+        <p class="text-center">A homebrew binary tree in C++. Still a work in progress: will eventually work for generic types.</p>
       </div>
 
       <!-- Third slide -->
@@ -156,15 +160,17 @@
             CS-410: Intro to Web Development
           </a>
         </h4>
-        <p class="text-center">Assignments covering HTML, CSS, and JavaScript.</p>
+        <p class="text-center">Assignments covering HTML, CSS, and JavaScript, as well as frameworks like Bootstrap.</p>
       </div>
     </div>
 
-    <!-- Carousel controls -->
+    <!-- Carousel prev button -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
+
+    <!-- Carousel next button -->
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
@@ -176,28 +182,39 @@
   <section id="contact">
     <div class="row my-3">
     <form class="d-block mx-auto w-75 contact-form">
-    <h2>Contact</h2>
+      <h2>Contact</h2>
       <div class="row mb-3">
-        <div class="col">
+
+        <!-- Input name -->
+        <div class="col-xs-1 col-md-6">
           <label for="name" class="form-label">Name:</label>
           <input type="text" class="form-control" id="name" />
         </div>
+
+        <!-- Input email -->
         <div class="col">
           <label for="email" class="form-label">Email:</label>
           <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
         </div>
       </div>
+
+      <!-- Input message -->
       <div class="row mb-3">
-      <div class="col">
-        <label for="message" class="form-label">Message:</label>
-        <textarea class="form-control" id="message" rows="3"></textarea>
-      </div></div>
+        <div class="col">
+          <label for="message" class="form-label">Message:</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+      </div>
+
+      <!-- Form buttons -->
       <button type="submit" class="btn btn-primary">Submit</button>
       <button type="reset" class="btn btn-outline-primary">Reset</button>
+
     </form>
     </div>
   </section>
 
+  <!-- Copyright -->
   <footer class="d-block float-right">
     <div class="text-muted">&copy; Jacob Bentley, 2022</div>
   </footer>

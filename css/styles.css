@@ -1,12 +1,21 @@
 :root {
     --dark-gray: #383838;
 }
+
+.main {
+    max-width: 750px;
+}
+
 .bg-dark {
     background-color: var(--dark-gray) !important;
 }
 
 #nav-obj {
     margin: 10px;
+}
+
+.navbar-nav {
+    margin-top: 10px;
 }
 
 .navbar-toggler {
@@ -40,13 +49,19 @@
 @media (min-width: 414px) {
     #resume {
         border: none;
+        width: 85%;
     }
     .carousel-item>img {
-        height: 150px;
+        height: 175px;
     }
 }
 
 @media (min-width: 768px) {
+    #resume {
+        border-left: solid 2px var(--dark-gray);
+        border-right: solid 2px var(--dark-gray);
+        width: 60%;
+    }
     .carousel-item>img {
         height: 300px;
     }
@@ -55,8 +70,6 @@
 #resume {
     color: var(--dark-gray);
     margin: 20px 10px 20px 10px;
-    border-left: solid 2px var(--dark-gray);
-    border-right: solid 2px var(--dark-gray);
 }
 
 .resume-header {
@@ -97,8 +110,4 @@
     margin-right: 10px;
     margin-bottom: 10px;
     text-align: right;
-}
-
-.main {
-    max-width: 750px;
 }
