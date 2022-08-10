@@ -24,6 +24,12 @@
 #resume {
     color: #383838;
     margin: 20px 10px 10px 10px;
+    border-left: solid 2px #383838;
+    border-right: solid 2px #383838;
+}
+
+.resume-header {
+    font-weight: bold;
 }
 
 .education, .experience {
@@ -38,6 +44,29 @@
     background-color: #383838 !important;
 }
 
+#projects {
+    margin: 10px;
+}
+
 .carousel-item {
     margin-top: 10px;
+}
+
+#contact {
+    margin: 10px;
+}
+
+.btn-primary {
+    background-color: #383838 !important;
+    border: none;
+}
+
+.btn-outline-primary {
+    color: #383838 !important;
+    border-color: #383838 !important;
+}
+
+.text-muted {
+    margin-right: 10px;
+    text-align: right;
 }

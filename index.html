@@ -62,7 +62,7 @@
 
   <!-- About -->
   <section id="about" class="bg-dark rounded gray">
-    <h2>About Me</h2>
+    <h2>About</h2>
     <p>I'm a computer science major at Portland State University, as well as an active intern in the PSU/PDX Cooperative Education Program (PCEP).</p>
     <p>My first rotation in PCEP is with Multnomah County, and I'm excited to be a part of their team of .NET developers creating software products for various county departments. I'm new to programming in C# and .NET but so far I'm enjoying the overall sense of integration that comes with working in a Microsoft environment.</p>
     <p>As for this website, it's a quick little demo site I'm deploying for a web development class at PSU. If you recognize a lot of default Bootstrap styling, you have a sense of the time crunch I'm working under.</p>
@@ -71,7 +71,7 @@
   <!-- Resume -->
   <section id="resume" class="d-block mx-auto w-50">
     <div class="education">
-      <h3>Education</h3>
+      <h3 class="resume-header">Education:</h3>
       <div class="psu-info">
         <h4>Portland State University</h4>
         <ul>
@@ -90,7 +90,7 @@
       </div>
     </div>
     <div class="experience">
-      <h3>Experience</h3>
+      <h3 class="resume-header">Experience:</h3>
       <div class="current-job">
         <h4>Current</h4>
         <ul>
@@ -161,6 +161,36 @@
     </button>
 
   </section>
+
+  <!-- Contact form -->
+  <section id="contact">
+    <div class="row my-3">
+    <form class="d-block mx-auto w-50 contact-form">
+    <h2>Contact</h2>
+      <div class="row mb-3">
+        <div class="col">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name" />
+        </div>
+        <div class="col">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+        </div>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+        <label for="message" class="form-label">Message:</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+      </div></div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-outline-primary">Reset</button>
+    </form>
+    </div>
+  </section>
+
+  <footer class="d-block float-right">
+    <div class="text-muted">&copy; Jacob Bentley, 2022</div>
+  </footer>
 
 </body>
 </html>
