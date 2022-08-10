@@ -13,3 +13,11 @@
 #headshot {
     margin: 10px 10px 10px 10px;
 }
+
+#about {
+    color: white;
+    text-align: justify;
+    border: solid 2px;
+    margin: 10px;
+    padding: 10px;
+}

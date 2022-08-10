@@ -24,16 +24,20 @@
   </script>
 </head>
 <body>
+  <!-- Navbar -->
   <nav id="nav-obj" class="navbar navbar-dark bg-dark rounded">
     <span id="logo" class="navbar-brand mb-0 h1">Jacob Bentley</span>
     <ul class="navlist navbar-brand mb-0 navbar navbar-dark bg-dark">
-      <li class="navbar-brand mb-0 h2">About</li>
+      <li class="navbar-brand mb-0 h2">
+        <a class="navbar-brand mb-0 navbar navbar-dark bg-dark" href="#about">About</a>
+      </li>
       <li class="navbar-brand mb-0 h2">Resume</li>
       <li class="navbar-brand mb-0 h2">Projects</li>
       <li class="navbar-brand mb-0 h2">Contact</li>
     </ul>
   </nav>
-  <section class="about">
+  <!-- Welcome -->
+  <section>
     <div class="text-center">
       <img
         id="headshot"
@@ -45,6 +49,13 @@
         Hi there! I'm Jacob Bentley and this is my website.
       </p>
     </div>
+  </section>
+  <!-- About -->
+  <section id="about" class="bg-dark rounded">
+    <h2>About Me</h2>
+    <p>I'm a computer science major at Portland State University, as well as an active intern in the PSU/PDX Cooperative Education Program (PCEP).</p>
+    <p>My first rotation in PCEP is with Multnomah County, and I'm excited to be a part of their team of .NET developers creating software products for various county departments. I'm new to programming in C# and .NET but so far I'm enjoying the overall sense of integration that comes with working in a Microsoft environment.</p>
+    <p>As for this website, it's a quick little demo site I'm deploying for a web development class at PSU. If you recognize a lot of default Bootstrap styling, you have a sense of the time crunch I'm working under.</p>
   </section>
 </body>
 </html>
