@@ -1,113 +1,114 @@
 :root {
-    --dark-gray: #383838;
+  --dark-gray: #383838;
 }
 
 .main {
-    max-width: 750px;
+  max-width: 750px;
 }
 
 .bg-dark {
-    background-color: var(--dark-gray) !important;
+  background-color: var(--dark-gray) !important;
 }
 
 #nav-obj {
-    margin: 10px;
+  margin: 10px;
 }
 
 .navbar-nav {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .navbar-toggler {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .navlist {
-    list-style: none;
+  list-style: none;
 }
 
 #logo {
-    font-size: 24px;
-    margin-left: 20px;
+  font-size: 24px;
+  margin-left: 20px;
 }
 
 #headshot {
-    margin: 10px 10px 10px 10px;
+  margin: 10px;
 }
 
 .lead {
-    margin: 10px;
+  margin: 10px;
 }
 
 #about, #projects {
-    color: white;
-    text-align: justify;
-    margin: 20px 10px 20px 10px;
-    padding: 20px;
+  color: white;
+  text-align: justify;
+  margin: 20px 10px 20px 10px;
+  padding: 20px;
 }
 
 @media (min-width: 414px) {
-    #resume {
-        border: none;
-        width: 85%;
-    }
-    .carousel-item>img {
-        height: 175px;
-    }
+  #resume {
+    border: none;
+    width: 85%;
+  }
+  .carousel-item>img {
+    height: 175px;
+  }
 }
 
 @media (min-width: 768px) {
-    #resume {
-        border-left: solid 2px var(--dark-gray);
-        border-right: solid 2px var(--dark-gray);
-        width: 60%;
-    }
-    .carousel-item>img {
-        height: 300px;
-    }
+  #resume {
+    border-left: solid 2px var(--dark-gray);
+    border-right: solid 2px var(--dark-gray);
+    width: 60%;
+  }
+  .carousel-item>img {
+    height: 300px;
+  }
 }
 
 #resume {
-    color: var(--dark-gray);
-    margin: 20px 10px 20px 10px;
+  color: var(--dark-gray);
+  margin: 20px 10px 20px 10px;
 }
 
 .resume-header {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .education, .experience {
-    margin-left: 20px;
+	margin: 25px auto 25px 20px;
 }
 
 .psu-info, .uo-info, .current-job, .previous-jobs {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 #projects {
-    margin: 20px 10px 20px 10px;
+  margin: 20px 10px 20px 10px;
 }
 
 .carousel-item {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #contact {
-    margin: 20px 10px 20px 10px;
+  margin: 20px 10px 20px 10px;
 }
 
 .btn-primary {
-    background-color: var(--dark-gray) !important;
-    border: none;
+  background-color: var(--dark-gray) !important;
+  border: none;
 }
 
 .btn-outline-primary {
-    color: var(--dark-gray) !important;
-    border-color: var(--dark-gray) !important;
+  color: var(--dark-gray) !important;
+  border-color: var(--dark-gray) !important;
 }
 
 .text-muted {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    text-align: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: right;
 }
+
