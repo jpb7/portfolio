@@ -55,9 +55,11 @@
     border: none;
     width: 85%;
   }
-  .carousel-item>img {
+  .carousel-item>a>img {
     height: 175px;
   }
+  .projects {
+    height: 285px;
 }
 
 @media (min-width: 768px) {
@@ -66,8 +68,11 @@
     border-right: solid 2px var(--dark-gray);
     width: 75%;
   }
-  .carousel-item>img {
+  .carousel-item>a>img {
     height: 300px;
+  }
+  #projects {
+    height: 485px;
   }
 }
 
