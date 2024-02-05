@@ -11,15 +11,15 @@
 }
 
 #nav-obj {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 10px;
 }
 
 .navbar-nav {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-toggler {
@@ -81,7 +81,7 @@
 }
 
 .education, .experience {
-	margin: 25px auto 25px 20px;
+  margin: 25px auto 25px 20px;
 }
 
 .psu-info, .uo-info, .current-job, .previous-jobs {
@@ -108,7 +108,7 @@
 .btn-outline-primary {
   color: var(--dark-gray) !important;
   border-color: var(--dark-gray) !important;
-	background-color: white !important;
+  background-color: white !important;
 }
 
 .text-muted {
@@ -118,17 +118,29 @@
 }
 
 .modal-header {
-	background-color: var(--dark-gray) !important;
-	color: white;
+  background-color: var(--dark-gray) !important;
+  color: white;
 }
 
 .modal-body {
-	margin-bottom: 0px !important;
-	padding-bottom: 0px;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px;
 }
 
 .modal-footer {
-	margin-top: 0px !important;
-	padding-top: 0px;
-	border: none;
+  margin-top: 0px !important;
+  padding-top: 0px;
+  border: none;
 }
+
+.internships {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.internships li {
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+}
+
