@@ -11,11 +11,15 @@
 }
 
 #nav-obj {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
   margin: 10px;
 }
 
 .navbar-nav {
-  margin-top: 10px;
+	display: flex;
+	align-items: center;
 }
 
 .navbar-toggler {
