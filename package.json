@@ -4,7 +4,7 @@
   "description": "Temporary portfolio site for establishing legitimacy",
   "main": "server.js",
   "scripts": {
-    "start": "browser-sync start --server --files \"**/*\""
+    "start": "browser-sync start --server public --files \"public/**/*\""
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
     "portfolio",
     "server",
     "static-site",
+    "express",
     "node",
     "nodemailer"
   ],
@@ -25,5 +26,11 @@
   "homepage": "https://github.com/jpb7/jpb7.github.io#readme",
   "devDependencies": {
     "browser-sync": "^3.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.9"
   }
 }
