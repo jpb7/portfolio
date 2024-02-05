@@ -4,7 +4,7 @@
   "description": "Temporary portfolio site for establishing legitimacy",
   "main": "server.js",
   "scripts": {
-    "start:dev": "browser-sync start --server --files \"**/*\""
+    "start": "browser-sync start --server --files \"**/*\""
   },
   "repository": {
     "type": "git",
