@@ -64,7 +64,7 @@
   #resume {
     border-left: solid 2px var(--dark-gray);
     border-right: solid 2px var(--dark-gray);
-    width: 60%;
+    width: 75%;
   }
   .carousel-item>img {
     height: 300px;
@@ -84,7 +84,7 @@
   margin: 25px auto 25px 20px;
 }
 
-.psu-info, .uo-info, .current-job, .previous-jobs {
+.psu-info, .uo-info, .intern-exp, .previous-jobs {
   margin-left: 20px;
 }
 
