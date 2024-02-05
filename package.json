@@ -4,7 +4,8 @@
   "description": "Temporary portfolio site for establishing legitimacy",
   "main": "server.js",
   "scripts": {
-    "start": "browser-sync start --server public --files \"public/**/*\""
+    "start": "nodemon src/server.js",
+    "watch": "browser-sync start --server public --files \"public/**/*\""
   },
   "repository": {
     "type": "git",
