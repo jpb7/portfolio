@@ -17,12 +17,19 @@
   margin: 10px;
 }
 
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* This centers the content horizontally */
+}
+
 .navbar-nav {
   display: flex;
   align-items: center;
 }
 
 .navbar-toggler {
+  z-index: 200;
   margin-right: 10px;
 }
 
@@ -50,13 +57,18 @@
   padding: 20px;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 360px) {
   #resume {
     border: none;
     width: 85%;
   }
   .carousel-item>a>img {
-    height: 175px;
+    height: 135px;
+  }
+  .internships {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 0.5rem;
   }
   .projects {
     height: 285px;
@@ -70,6 +82,11 @@
   }
   .carousel-item>a>img {
     height: 300px;
+  }
+  .internships {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
   }
   #projects {
     height: 485px;
@@ -136,12 +153,6 @@
   margin-top: 0px !important;
   padding-top: 0px;
   border: none;
-}
-
-.internships {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 1rem;
 }
 
 .internships li {
