@@ -1,0 +1,19 @@
+steps:
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', '${_IMAGE}:${SHORT_SHA}', '.']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', '${_IMAGE}:${SHORT_SHA}']
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud run deploy jpb7-portfolio \
+          --region="${_REGION}" \
+          --image="${_IMAGE}:${SHORT_SHA}" \
+          --platform=managed  \
+          --allow-unauthenticated
+
