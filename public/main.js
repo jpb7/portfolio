@@ -1,18 +1,13 @@
+import { Modal } from 'https://cdn.skypack.dev/bootstrap';
 
-//  Wait for Bootstrap bundle, then handle contact form submissions
+//  Handle contact form submissions
 //
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('form');
+  const modal = new Modal(document.getElementById('submissionModal'));
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-
-    const modalPromise = (async () => {
-      while (typeof bootstrap === 'undefined') {
-        await new Promise(resolve => setTimeout(resolve, 100));
-      }
-      return new bootstrap.Modal(document.getElementById('submissionModal'));
-    })();
 
     const formData = new FormData(form);
     const formObj = {};
@@ -27,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .then(async (response) => {
       if (response.ok) {
-        const modal = await modalPromise;
         modal.show();
         console.log('Email sent successfully');
       } else {
@@ -35,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
     .catch(error => {
-      console.error('Error sending email:', error);
+      console.error('Error sending email:', error.message);
     })
     .finally(() => {
       form.reset();
